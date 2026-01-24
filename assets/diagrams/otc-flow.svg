@@ -50,7 +50,7 @@
   <g transform="translate(70,260)">
     <rect class="card" x="0" y="0" width="520" height="92" rx="18"/>
     <circle cx="30" cy="46" r="10" class="chip"/>
-    <text class="t" x="52" y="42">Controls & Checks</text>
+    <text class="t" x="52" y="42">Controls &amp; Checks</text>
     <text class="s" x="52" y="66">Incompletion • Copy Control • Delivery split/grouping • Output determination</text>
 
     <rect class="card" x="600" y="0" width="520" height="92" rx="18"/>
