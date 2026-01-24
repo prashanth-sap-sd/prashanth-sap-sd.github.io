@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4f7cff"/>
+      <stop offset="1" stop-color="#8a5bff"/>
+    </linearGradient>
+    <style>
+      .bg{fill:#0b1220}
+      .card{fill:#121c33;stroke:rgba(255,255,255,.14);stroke-width:1.2}
+      .t{fill:#eaf0ff;font-family:Inter,Arial;font-size:20px;font-weight:700}
+      .s{fill:rgba(234,240,255,.7);font-family:Inter,Arial;font-size:14px;font-weight:600}
+      .arrow{stroke:rgba(234,240,255,.55);stroke-width:2.2;marker-end:url(#m)}
+      .chip{fill:url(#g)}
+    </style>
+    <marker id="m" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="rgba(234,240,255,.65)"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1200" height="420" rx="26"/>
+  <rect x="40" y="36" width="1120" height="348" rx="22" fill="rgba(255,255,255,.03)" stroke="rgba(255,255,255,.08)"/>
+
+  <text class="t" x="70" y="82">End-to-End Order-to-Cash (OTC)</text>
+  <text class="s" x="70" y="108">Sales Order → Delivery → Billing → FI Posting (with key checks)</text>
+
+  <g transform="translate(70,140)">
+    <rect class="card" x="0" y="0" width="200" height="90" rx="16"/>
+    <text class="t" x="18" y="38">Sales Order</text>
+    <text class="s" x="18" y="62">ATP • Credit • Pricing</text>
+
+    <line class="arrow" x1="210" y1="45" x2="330" y2="45"/>
+
+    <rect class="card" x="340" y="0" width="200" height="90" rx="16"/>
+    <text class="t" x="358" y="38">Delivery</text>
+    <text class="s" x="358" y="62">SP • Route • Picking</text>
+
+    <line class="arrow" x1="550" y1="45" x2="670" y2="45"/>
+
+    <rect class="card" x="680" y="0" width="200" height="90" rx="16"/>
+    <text class="t" x="698" y="38">Billing</text>
+    <text class="s" x="698" y="62">Plans • Output • Taxes</text>
+
+    <line class="arrow" x1="890" y1="45" x2="1010" y2="45"/>
+
+    <rect class="card" x="1020" y="0" width="200" height="90" rx="16"/>
+    <text class="t" x="1038" y="38">FI Posting</text>
+    <text class="s" x="1038" y="62">Acct Det • Revenue</text>
+  </g>
+
+  <g transform="translate(70,260)">
+    <rect class="card" x="0" y="0" width="520" height="92" rx="18"/>
+    <circle cx="30" cy="46" r="10" class="chip"/>
+    <text class="t" x="52" y="42">Controls & Checks</text>
+    <text class="s" x="52" y="66">Incompletion • Copy Control • Delivery split/grouping • Output determination</text>
+
+    <rect class="card" x="600" y="0" width="520" height="92" rx="18"/>
+    <circle cx="630" cy="46" r="10" class="chip"/>
+    <text class="t" x="652" y="42">Integration Touchpoints</text>
+    <text class="s" x="652" y="66">SD ↔ FI/MM/PP/WM • IDoc/EDI awareness • Master data readiness</text>
+  </g>
+</svg>
