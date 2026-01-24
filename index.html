@@ -1,109 +1,141 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Prashanth Goud | Senior SAP SD Consultant</title>
-<link rel="stylesheet" href="styles.css">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prashanth Goud | Senior SAP SD / S/4HANA Consultant</title>
+  <meta name="description" content="Senior SAP SD / S/4HANA Consultant. Enterprise OTC & Pricing leadership. Case studies, playbooks, and diagrams built for hiring managers." />
+  <meta name="theme-color" content="#0b1220" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
+  <!-- Top Bar -->
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="brand__mark">PG</span>
+        <span class="brand__text">Prashanth Goud</span>
+      </a>
 
-<header class="navbar">
-<div class="logo">PG</div>
-<nav>
-<a href="#about">About</a>
-<a href="#expertise">Expertise</a>
-<a href="#case">Case Studies</a>
-<a href="#contact" class="btn-nav">Contact</a>
-</nav>
-</header>
+      <nav class="nav" aria-label="Primary">
+        <a class="nav__link" href="#about">About</a>
+        <a class="nav__link" href="#expertise">Expertise</a>
+        <a class="nav__link" href="#proof">Proof</a>
+        <a class="nav__link" href="#case-studies">Case Studies</a>
+        <a class="nav__link" href="#diagrams">Diagrams</a>
+        <a class="nav__link nav__cta" href="#contact">Contact</a>
+      </nav>
 
-<section class="hero">
-<div class="hero-left">
-<span class="tag">Senior SAP SD / S/4HANA Consultant</span>
-<h1>Enterprise OTC & Pricing Leadership.</h1>
-<p>
-10+ years delivering SAP S/4HANA & ECC transformations.
-End-to-End Order-to-Cash ownership, Advanced Pricing,
-Logistics Execution, and cross-module integration.
-</p>
+      <button class="navbtn" id="navbtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
 
-<div class="hero-buttons">
-<a href="#case" class="btn-primary">View Case Studies</a>
-<a href="#" class="btn-secondary">Download Resume</a>
-</div>
-</div>
+    <!-- Mobile Menu -->
+    <div class="mobile" id="mobile">
+      <div class="container mobile__inner">
+        <a href="#about" class="mobile__link">About</a>
+        <a href="#expertise" class="mobile__link">Expertise</a>
+        <a href="#proof" class="mobile__link">Proof</a>
+        <a href="#case-studies" class="mobile__link">Case Studies</a>
+        <a href="#diagrams" class="mobile__link">Diagrams</a>
+        <a href="#contact" class="mobile__link mobile__cta">Contact</a>
+      </div>
+    </div>
+  </header>
 
-<div class="hero-card">
-<h3>Prashanth Goud</h3>
-<p class="role">Senior SAP SD/LE Consultant</p>
+  <!-- Hero -->
+  <main id="top">
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__left">
+          <div class="pill">
+            <span class="dot"></span>
+            Senior SAP SD / S/4HANA Consultant • Enterprise OTC & Pricing
+          </div>
 
-<div class="stats">
-<div>
-<strong>10+</strong>
-<span>Years Experience</span>
-</div>
-<div>
-<strong>OTC</strong>
-<span>End-to-End Ownership</span>
-</div>
-<div>
-<strong>S/4</strong>
-<span>Migration Ready</span>
-</div>
-</div>
+          <h1 class="hero__title">
+            Senior SAP SD / S/4HANA Consultant.<br />
+            <span class="gradient">Enterprise OTC & Pricing Leadership.</span>
+          </h1>
 
-<div class="links">
-<a href="https://www.linkedin.com/in/pr-goud" target="_blank">LinkedIn</a>
-<a href="https://github.com/prashanth-sap-sd" target="_blank">GitHub</a>
-</div>
+          <p class="hero__subtitle">
+            10+ years delivering SAP S/4HANA & ECC transformations across Order-to-Cash, Advanced Pricing,
+            Billing, Logistics Execution (LE), and SD–FI/MM integration — with a delivery mindset focused on
+            clean documentation, stable go-lives, and measurable business outcomes.
+          </p>
 
-</div>
-</section>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#case-studies">View Case Studies</a>
+            <a class="btn btn--ghost" href="Prashanth-Goud-Resume.pdf" target="_blank" rel="noopener">
+              Download Resume
+            </a>
+          </div>
 
-<section id="expertise" class="section">
-<h2>Core Expertise</h2>
-<div class="grid">
-<div class="card">
-<h3>Order-to-Cash</h3>
-<p>Inquiry → Order → Delivery → Billing → FI Integration</p>
-</div>
+          <div class="hero__meta">
+            <div class="meta">
+              <div class="meta__k">Focus</div>
+              <div class="meta__v">OTC • Pricing • Billing • LE</div>
+            </div>
+            <div class="meta">
+              <div class="meta__k">Strength</div>
+              <div class="meta__v">S/4HANA migration + production stabilization</div>
+            </div>
+            <div class="meta">
+              <div class="meta__k">Artifacts</div>
+              <div class="meta__v">Case studies • Playbooks • Diagrams</div>
+            </div>
+          </div>
+        </div>
 
-<div class="card">
-<h3>Advanced Pricing</h3>
-<p>Condition Techniques, Access Sequences, Pricing Procedures</p>
-</div>
+        <aside class="hero__card">
+          <div class="card card--glass">
+            <div class="card__top">
+              <div class="avatar" aria-hidden="true">PG</div>
+              <div>
+                <div class="card__name">Prashanth Goud</div>
+                <div class="card__role">Senior SAP SD/LE Consultant</div>
+              </div>
+            </div>
 
-<div class="card">
-<h3>S/4HANA Migration</h3>
-<p>Brownfield & Greenfield SD Workstream Leadership</p>
-</div>
-</div>
-</section>
+            <div class="stats">
+              <div class="stat">
+                <div class="stat__big">10+</div>
+                <div class="stat__small">Years Experience</div>
+              </div>
+              <div class="stat">
+                <div class="stat__big">OTC</div>
+                <div class="stat__small">End-to-End Ownership</div>
+              </div>
+              <div class="stat">
+                <div class="stat__big">S/4</div>
+                <div class="stat__small">Migration Ready</div>
+              </div>
+            </div>
 
-<section id="case" class="section light">
-<h2>Highlighted Case Study</h2>
-<div class="case-box">
-<h3>S/4HANA SD Migration</h3>
-<p>
-Led enterprise S/4HANA rollout across multiple regions.
-Reduced pricing defects by 40% and improved order cycle time by 22%.
-</p>
-</div>
-</section>
+            <div class="card__links">
+              <a class="linkbtn" href="https://www.linkedin.com/in/pr-goud" target="_blank" rel="noopener">LinkedIn</a>
+              <a class="linkbtn" href="https://github.com/prashanth-sap-sd" target="_blank" rel="noopener">GitHub</a>
+              <a class="linkbtn linkbtn--primary" href="https://github.com/prashanth-sap-sd/sap-sd-portfolio" target="_blank" rel="noopener">
+                Portfolio Repo
+              </a>
+            </div>
 
-<section id="contact" class="section">
-<h2>Let’s Connect</h2>
-<p>Open to senior SAP SD / S/4HANA consulting opportunities.</p>
-<a href="mailto:prashanththotakuri30@gmail.com" class="btn-primary">Email Me</a>
-</section>
+            <div class="note">
+              Tip: Keep this site fast and clean — hiring managers actually scroll.
+            </div>
+          </div>
+        </aside>
+      </div>
 
-<footer>
-<p>© 2026 Prashanth Goud | SAP SD Consultant</p>
-</footer>
+      <div class="hero__bg" aria-hidden="true"></div>
+    </section>
 
-<script src="script.js"></script>
-</body>
-</html>
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div clas
