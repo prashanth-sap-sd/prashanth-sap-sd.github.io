@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4f7cff"/>
+      <stop offset="1" stop-color="#8a5bff"/>
+    </linearGradient>
+    <style>
+      .bg{fill:#0b1220}
+      .card{fill:#121c33;stroke:rgba(255,255,255,.14);stroke-width:1.2}
+      .t{fill:#eaf0ff;font-family:Inter,Arial;font-size:20px;font-weight:800}
+      .s{fill:rgba(234,240,255,.7);font-family:Inter,Arial;font-size:14px;font-weight:650}
+      .arrow{stroke:rgba(234,240,255,.55);stroke-width:2.2;marker-end:url(#m)}
+      .tag{fill:url(#g)}
+    </style>
+    <marker id="m" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="rgba(234,240,255,.65)"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1200" height="420" rx="26"/>
+  <rect x="40" y="36" width="1120" height="348" rx="22" fill="rgba(255,255,255,.03)" stroke="rgba(255,255,255,.08)"/>
+
+  <text class="t" x="70" y="82">Pricing Determination Framework</text>
+  <text class="s" x="70" y="108">Condition Technique → Procedure → Exclusions → Records → Analysis</text>
+
+  <g transform="translate(70,145)">
+    <rect class="card" x="0" y="0" width="240" height="95" rx="16"/>
+    <text class="t" x="18" y="40">Condition Tables</text>
+    <text class="s" x="18" y="66">Key combinations</text>
+
+    <line class="arrow" x1="250" y1="48" x2="360" y2="48"/>
+
+    <rect class="card" x="370" y="0" width="240" height="95" rx="16"/>
+    <text class="t" x="388" y="40">Access Sequence</text>
+    <text class="s" x="388" y="66">Search strategy</text>
+
+    <line class="arrow" x1="620" y1="48" x2="730" y2="48"/>
+
+    <rect class="card" x="740" y="0" width="240" height="95" rx="16"/>
+    <text class="t" x="758" y="40">Condition Types</text>
+    <text class="s" x="758" y="66">Value logic + scales</text>
+  </g>
+
+  <g transform="translate(70,265)">
+    <rect class="card" x="0" y="0" width="360" height="92" rx="18"/>
+    <circle cx="30" cy="46" r="10" class="tag"/>
+    <text class="t" x="52" y="42">Pricing Procedure</text>
+    <text class="s" x="52" y="66">Step sequence + totals + controls</text>
+
+    <rect class="card" x="400" y="0" width="360" height="92" rx="18"/>
+    <circle cx="430" cy="46" r="10" class="tag"/>
+    <text class="t" x="452" y="42">Exclusions & Routines</text>
+    <text class="s" x="452" y="66">Requirements • formulas • exclusions</text>
+
+    <rect class="card" x="800" y="0" width="360" height="92" rx="18"/>
+    <circle cx="830" cy="46" r="10" class="tag"/>
+    <text class="t" x="852" y="42">Pricing Analysis</text>
+    <text class="s" x="852" y="66">Fast debugging path (support-ready)</text>
+  </g>
+</svg>
