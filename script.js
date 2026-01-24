@@ -1,21 +1,23 @@
 (function () {
-  const year = document.getElementById("year");
-  if (year) year.textContent = new Date().getFullYear();
+  const burger = document.getElementById("burger");
+  const nav = document.getElementById("nav");
 
-  const btn = document.getElementById("menuBtn");
-  const mobile = document.getElementById("mobileNav");
-
-  if (btn && mobile) {
-    btn.addEventListener("click", () => {
-      const isOpen = mobile.classList.toggle("show");
-      btn.setAttribute("aria-expanded", String(isOpen));
+  if (burger && nav) {
+    burger.addEventListener("click", () => {
+      const isOpen = nav.classList.toggle("open");
+      burger.setAttribute("aria-expanded", String(isOpen));
     });
 
-    mobile.querySelectorAll("a").forEach(a => {
+    // Close menu when clicking a link (mobile)
+    nav.querySelectorAll("a").forEach(a => {
       a.addEventListener("click", () => {
-        mobile.classList.remove("show");
-        btn.setAttribute("aria-expanded", "false");
+        nav.classList.remove("open");
+        burger.setAttribute("aria-expanded", "false");
       });
     });
   }
+
+  // Footer year
+  const y = document.getElementById("year");
+  if (y) y.textContent = new Date().getFullYear();
 })();
