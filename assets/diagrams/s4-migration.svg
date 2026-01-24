@@ -54,7 +54,7 @@
   <g transform="translate(70,270)">
     <rect class="card" x="0" y="0" width="1120" height="95" rx="18"/>
     <circle cx="30" cy="48" r="10" class="dot"/>
-    <text class="t" x="54" y="44">Hypercare & Stabilization</text>
+    <text class="t" x="54" y="44">Hypercare &amp; Stabilization</text>
     <text class="s" x="54" y="70">Triage → Fix → Validate → Prevent recurrence • Documentation handoff to support</text>
   </g>
 </svg>
