@@ -1,23 +1,21 @@
 (function () {
-  const navbtn = document.getElementById("navbtn");
-  const mobile = document.getElementById("mobile");
+  const year = document.getElementById("year");
+  if (year) year.textContent = new Date().getFullYear();
 
-  if (navbtn && mobile) {
-    navbtn.addEventListener("click", () => {
+  const btn = document.getElementById("menuBtn");
+  const mobile = document.getElementById("mobileNav");
+
+  if (btn && mobile) {
+    btn.addEventListener("click", () => {
       const isOpen = mobile.classList.toggle("show");
-      navbtn.setAttribute("aria-expanded", String(isOpen));
+      btn.setAttribute("aria-expanded", String(isOpen));
     });
 
-    // close menu on click
-    mobile.querySelectorAll("a").forEach((a) => {
+    mobile.querySelectorAll("a").forEach(a => {
       a.addEventListener("click", () => {
         mobile.classList.remove("show");
-        navbtn.setAttribute("aria-expanded", "false");
+        btn.setAttribute("aria-expanded", "false");
       });
     });
   }
-
-  // year
-  const year = document.getElementById("year");
-  if (year) year.textContent = new Date().getFullYear();
 })();
