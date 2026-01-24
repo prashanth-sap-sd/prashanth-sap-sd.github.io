@@ -384,3 +384,33 @@ img{ max-width:100%; display:block; }
   margin-top: 20px;
   border-top: 1px solid var(--stroke);
 }
+/* === Premium background system === */
+:root{
+  --bg1:#070A12; /* deep ink */
+  --bg2:#0B1226; /* navy */
+  --bg3:#0A1A16; /* deep teal */
+  --bg4:#1A0F1D; /* deep plum */
+  --bg5:#0D0F14; /* graphite */
+}
+
+body{
+  background: radial-gradient(1200px 800px at 20% 10%, rgba(93,140,255,.18), transparent 60%),
+              radial-gradient(900px 700px at 80% 20%, rgba(120,255,214,.12), transparent 55%),
+              linear-gradient(180deg, var(--bg1), var(--bg2));
+  color:#EAF0FF;
+  transition: background 900ms ease;
+}
+
+/* glass cards */
+.card, .panel, .section-card, .case-card{
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.10);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0,0,0,.35);
+}
+
+/* Links/buttons feel premium on dark */
+a{ color: #BBD0FF; }
+a:hover{ color:#FFFFFF; }
+
