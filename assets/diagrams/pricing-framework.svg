@@ -49,7 +49,7 @@
 
     <rect class="card" x="400" y="0" width="360" height="92" rx="18"/>
     <circle cx="430" cy="46" r="10" class="tag"/>
-    <text class="t" x="452" y="42">Exclusions & Routines</text>
+    <text class="t" x="452" y="42">Exclusions &amp; Routines</text>
     <text class="s" x="452" y="66">Requirements • formulas • exclusions</text>
 
     <rect class="card" x="800" y="0" width="360" height="92" rx="18"/>
