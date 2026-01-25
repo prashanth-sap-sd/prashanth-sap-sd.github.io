@@ -320,3 +320,17 @@ h1{
     backdrop-filter: blur(14px);
   }
 }
+/* === Highlight style for Official SAP Certifications === */
+.cert--highlight {
+  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.03);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.cert--highlight:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+}
+
